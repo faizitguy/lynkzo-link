@@ -1,0 +1,33 @@
+{
+  "name": "connectx",
+  "version": "0.0.0",
+  "description": "RESTful API for lynkzo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js | pino-pretty",
+    "lint": "eslint *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sanchit94/connectx.git"
+  },
+  "author": "Sanchit Sharma <sanchit@lynkzo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanchit94/connectx/issues"
+  },
+  "homepage": "https://github.com/sanchit94/connectx#readme",
+  "dependencies": {
+    "@aws-sdk/credential-providers": "^3.750.0",
+    "@hapi/hapi": "^21.3.2",
+    "aws-sdk": "^2.1692.0",
+    "confidence": "^5.0.1",
+    "dotenv": "^16.4.7",
+    "hapi-pino": "^12.1.0",
+    "joi": "^17.10.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0"
+  }
+}

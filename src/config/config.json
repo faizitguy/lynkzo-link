@@ -1,0 +1,14 @@
+{
+    "testCode": {
+        "core": {
+            "host": {
+                "$env": "APP_BIND_TO",
+                "$default": "0.0.0.0"
+            },
+            "port": {
+                "$env": "APP_PORT",
+                "$default": 3000
+            }
+        }
+    }
+}
