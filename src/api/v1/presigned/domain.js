@@ -4,19 +4,17 @@ const AWS = require('aws-sdk');
 AWS.config.update({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID, // Use environment variables
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-	region: process.env.AWS_REGION 
+	region: 'ap-south-1'
 });
 
+
 const s3 = new AWS.S3({
-    region: process.env.AWS_REGION,  
+    region: 'ap-south-1',  
     signatureVersion: "v4"
 });
 
 module.exports = {
 	async getPresignedLink(request, h) {
-		console.log("AWS_ACCESS_KEY_ID:", process.env.AWS_ACCESS_KEY_ID);
-		console.log("AWS_SECRET_ACCESS_KEY:", process.env.AWS_SECRET_ACCESS_KEY);
-		console.log("AWS_REGION:", process.env.AWS_REGION);
 
         try {
             const params = {
