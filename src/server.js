@@ -71,7 +71,7 @@ exports.initializeServer = async function initializeServer() {
 		Logger.trace( 'Initializing the server' );
 
 		server = Hapi.server( {
-			port: 3000,
+			port: 4000,
 			host: 'localhost'
 		} );
 
